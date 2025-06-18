@@ -1,0 +1,48 @@
+   // ==== Typography ====
+   $font-title: 'Orbitron', sans-serif;
+   $font-subtitle: 'Audiowide', cursive;
+   $font-base: 'Share Tech Mono', monospace;
+ 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Desactiva el scroll */
+  height: 100%;
+}
+
+   .title-font {
+    font-family: $font-title;
+    font-weight: 500;
+  }
+
+  .subtitle-font {
+    font-family: $font-title;
+    font-weight: 400;
+  }
+  
+  .base-font {
+    font-family: $font-base;
+  }
+   
+   body {
+    margin: 0;
+    overflow: hidden;
+    background: 
+      radial-gradient(
+        ellipse at center,
+        rgba(11, 5, 30, 1) 0%,    /* Azul noche intenso */
+        rgb(14, 5, 31) 100%   /* Morado oscuro casi invisible */
+      );
+    height: 100vh;
+  }
+    #stars-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Detrás de todo */}
+
+html {
+  scroll-behavior: smooth;
+}

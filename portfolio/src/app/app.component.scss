@@ -1,6 +1,12 @@
 .app-container {
-    width: 100%;
-  display: grid;
-  grid-template-columns: 25% 75%;
-  overflow: hidden;
+  width: 90%;
+  max-width: 1920px;
+}
+
+app-side-bar {
+  width: 90%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

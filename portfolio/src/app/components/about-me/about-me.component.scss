@@ -2,7 +2,7 @@
     background-color: transparent;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
     color: white;
     box-sizing: border-box;
     margin-bottom: 5rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
 }
 
 .sub-container {
@@ -24,11 +24,12 @@
 }
 
 .profile-img {
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
     overflow: hidden;
     border-radius: 50%;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+    z-index: 1;
 
     img{
         width: 100%;
@@ -111,7 +112,7 @@ h2 {
 .typewriter-text {
   width: 0;
   display: inline-block;
-  border-right: 2px solid #0ff;
+  border-right: 2px solid #1E9BD1;
   animation: typing 2s steps(30, end) forwards, blink 0.75s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
@@ -142,11 +143,11 @@ h2 {
   color: transparent;
   background: linear-gradient(
   90deg,
-  #0ff,
+  #1E9BD1,
   #29B3F0,
   #8029B0,
   #FF00FF,
-  #0ff
+  #1E9BD1
 );
   background-size: 400% 100%;
   -webkit-background-clip: text;

@@ -1,10 +1,25 @@
 .sidebar {
-  width: 100%;
-  padding: 2rem;
+  margin-top: 5px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: 10;
+  border-radius: 15px;
+  z-index: 1000;
+
+  /* Fondo por defecto (antes de scroll) */
+  background-color: transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+.sidebar.scrolled {
+  background: radial-gradient(
+        ellipse at center,
+        rgba(11, 5, 30, 1) 0%,    /* Azul noche intenso */
+        rgb(14, 5, 31) 100%   /* Morado oscuro casi invisible */
+      );
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid #1E9BD1;
 }
 
 .sidebar-list {
@@ -31,11 +46,11 @@
   transition: color 0.3s ease, text-shadow 0.3s ease;
 
   &:hover {
-    color: #0ff;
+    color: #1E9BD1;
     text-shadow:
-      0 0 1px #0ff,
-      0 0 5px #0ff,
-      0 0 9px #0ff;
+      0 0 1px #1E9BD1,
+      0 0 5px #1E9BD1,
+      0 0 9px #1E9BD1;
   }
 }
 
@@ -46,7 +61,7 @@
   bottom: -4px;
   width: 0%;
   height: 1.5px;
-  background: #0ff;
+  background: #1E9BD1;
   transition: width 0.5s ease;
 }
 
@@ -55,11 +70,11 @@
 }
 
 .sidebar-link.active {
-  color: #0ff;
+  color: #1E9BD1;
   text-shadow:
-    0 0 1px #0ff,
-    0 0 5px #0ff,
-    0 0 9px #0ff;
+    0 0 1px #1E9BD1,
+    0 0 5px #1E9BD1,
+    0 0 9px #1E9BD1;
 }
 
 .sidebar-link.active::after {

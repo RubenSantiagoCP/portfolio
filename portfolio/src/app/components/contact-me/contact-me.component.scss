@@ -1,0 +1,124 @@
+.container-main-contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact-form-container {
+  position: relative;;
+  max-width: 500px;
+  max-height: auto;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  border: 1px solid #1E9BD1;
+  background-color: rgba(15, 20, 40, 0.4);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 20px #0ff4;
+
+  .form-title {
+    font-size: 1.8rem;
+    color: #1E9BD1;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-subtitle {
+    text-align: center;
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input, textarea {
+      width: 90%;
+      padding: 0.9rem 1rem;
+      background-color: rgba(15, 20, 40, 0.9);
+      border: 1px solid rgba(5, 255, 255, 0.2);
+      color: #fff;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      outline: none;
+      transition: all 0.3s;
+
+      &:focus {
+        border-color: #1E9BD1;
+        box-shadow: 0 0 10px #0ff6;
+      }
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    small {
+      color: #f66;
+      font-size: 0.75rem;
+      position: absolute;
+      bottom: -1.1rem;
+      left: 0.5rem;
+    }
+  }
+
+  .send-button {
+    width: 100%;
+    padding: 0.85rem;
+    background: linear-gradient(135deg, #1E9BD1, #1E9BD1);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background: linear-gradient(135deg, #1E9BD1, #1E9BD1);
+      box-shadow: 0 0 12px #1E9BD1;
+      transform: scale(1.03);
+    }
+
+    &:disabled {
+      background: #044;
+      color: #888;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.container-satelite {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+}
+
+.satellite-img {
+  width: 20%;
+  animation: rotate 20s linear infinite;
+  transition: transform 1s ease-in-out, top 2s ease-in-out, left 2s ease-in-out;
+  opacity: 0.9;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

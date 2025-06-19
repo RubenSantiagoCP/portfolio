@@ -2,10 +2,11 @@ import { Component, OnInit} from '@angular/core';
 import { ThreeBackgroundService } from './services/three-background.service';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { MainComponent } from './components/main/main.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [SideBarComponent, MainComponent],
+  imports: [SideBarComponent, MainComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

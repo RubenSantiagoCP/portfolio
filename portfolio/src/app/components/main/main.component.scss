@@ -5,8 +5,16 @@
   background-color: transparent;
   padding: 0rem;
 
-  section {
+  section, .fade-section {
     width: 100%;
-    scroll-margin-top: 60px; // espacio al hacer scroll
+    scroll-margin-top: 60px; 
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
+}
+
+.fade-section.faded {
+  opacity: 0;
+  transform: scale(0.95);
 }

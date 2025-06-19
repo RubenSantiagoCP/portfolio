@@ -2,11 +2,13 @@
    $font-title: 'Orbitron', sans-serif;
    $font-subtitle: 'Audiowide', cursive;
    $font-base: 'Share Tech Mono', monospace;
+
+   $color-primary: #1E9BD1;
+   $color-secondary: #00e6ff;
  
 html, body {
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Desactiva el scroll */
   height: 100%;
 }
 
@@ -26,7 +28,6 @@ html, body {
    
    body {
     margin: 0;
-    overflow: hidden;
     background: 
       radial-gradient(
         ellipse at center,
@@ -49,8 +50,60 @@ html {
 
 app-root {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: ce;
+}
+
+.title-section {
+  position: relative;
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: $color-primary; // color azul neón principal
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 1px $color-primary, 0 0 0px $color-primary;
+  margin-bottom: 2rem;
+  animation: glowFade 2s ease-in-out infinite alternate;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(0, 255, 255, 0.4);
+}
+
+.container-planet{
+    max-width: 170px;
+    display: flex;
+    justify-items: center;
+    animation: float 3s ease-in-out infinite;
+    margin-bottom: 1rem;
+}
+
+.container-planet img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+@keyframes glowFade {
+  0% {
+    text-shadow: 0 0 2px $color-primary, 0 0 2px $color-primary, 0 0 2px $color-primary;
+    letter-spacing: 1.5px;
+  }
+  100% {
+    text-shadow: 0 0 2px $color-primary, 0 0 2px $color-primary, 0 0 2px $color-primary;
+    letter-spacing: 4px;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

@@ -2,7 +2,7 @@
     <div class="container-planet">
         <img src="../../../assets/images/projects-planet.webp" alt="Planeta" />
     </div>
-    <h2 class="title-section">Proyectos</h2>
+    <h2 class="title-section">{{ 'PROJECTS.TITLE' | translate }}</h2>
     <div class="container-cards">
         <div class="project-card #cardRef" *ngFor="let project of projects">
             <div class="project-image">
@@ -10,10 +10,10 @@
             </div>
 
             <div class="project-content">
-                <h3 class="project-title">{{ project.title }}</h3>
-                <span class=" role glow-border">{{ project.role }}</span>
+                <h3 class="project-title">{{ project.title | translate }}</h3>
+                <span class=" role glow-border">{{ project.role | translate }}</span>
                 <p class="project-description base-font">
-                    {{ project.description }}
+                    {{ project.description | translate }}
                 </p>
 
                 <div class="project-tech">
@@ -21,9 +21,9 @@
                 </div>
 
                 <div class="project-links">
-                    <a *ngIf="project.url_code" [href]="project.url_code" target="_blank" class="btn-glow">Código</a>
-                    <a *ngIf="project.url_demo" [href]="project.url_demo" target="_blank" class="btn-glow">Ver demo</a>
-                    <a *ngIf="!project.url_code && !project.url_demo" class="btn-glow">No disponible</a>
+                    <a *ngIf="project.url_code" [href]="project.url_code" target="_blank" class="btn-glow">{{ 'PROJECTS.BUTTONS.CODE' | translate }}</a>
+                    <a *ngIf="project.url_demo" [href]="project.url_demo" target="_blank" class="btn-glow">{{ 'PROJECTS.BUTTONS.DEMO' | translate }}</a>
+                    <a *ngIf="!project.url_code && !project.url_demo" class="btn-glow">{{ 'PROJECTS.BUTTONS.NO_AVAILABLE' | translate }}</a>
                 </div>
             </div>
         </div>

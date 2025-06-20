@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Skill } from './Skill';
 import { CommonModule } from '@angular/common';
 import * as AOS from 'aos';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss',
 })
@@ -124,5 +125,11 @@ export class SkillsComponent {
 
   ngAfterViewInit() {
     AOS.refresh(); // fuerza AOS a escanear de nuevo el DOM
+  }
+
+  constructor(private translate: TranslateService) {
+    const lang = localStorage.getItem('lang') || 'es';
+    this.translate.setDefaultLang('es');
+    this.translate.use(lang);
   }
 }

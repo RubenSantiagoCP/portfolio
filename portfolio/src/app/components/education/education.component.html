@@ -3,7 +3,7 @@
     <div class="container-planet">
       <img src="../../../assets/images/education-planet.webp" alt="Planeta" />
     </div>
-    <h2 class="title-section">Educación</h2>
+    <h2 class="title-section">{{ 'EDUCATION.TITLE' | translate }}</h2>
   </div>
 
   <div class="education-list">
@@ -13,9 +13,9 @@
         <img src="{{ education.icon }}" alt="Universidad" />
       </div>
       <div class="education-info">
-        <h3 class="edu-title">{{ education.title }}</h3>
-        <p class="edu-place base-font">{{ education.place }}</p>
-        <p class="edu-year base-font">{{ education.year }}</p>
+        <h3 class="edu-title">{{ education.title | translate}}</h3>
+        <p class="edu-place base-font">{{ education.place | translate }}</p>
+        <p class="edu-year base-font">{{ education.year | translate }}</p>
       </div>
     </div>
   </div>

@@ -1,0 +1,102 @@
+{
+    "ABOUT_ME": {
+        "TITLE": "Hola! soy Santiago...",
+        "ROLE": "Desarrollador Full Stack",
+        "DESCRIPTION1": "Apasionado por crear aplicaciones web completas, desde el motor que impulsa todo (backend) hasta la cabina de control con una interfaz intuitiva y atractiva (frontend).",
+        "DESCRIPTION2": "Mi enfoque está en desarrollar soluciones tecnológicas que no solo funcionen bien, sino que también inspiren y conecten con los usuarios.",
+        "SOCIALS": {
+            "GITHUB": "GitHub",
+            "LINKEDIN": "LinkedIn",
+            "CONTACT": "Contactar",
+            "CV": "Ver CV"
+        }
+    },
+    "NAVBAR": {
+        "ABOUT_ME": "Sobre mí",
+        "PROJECTS": "Proyectos",
+        "SKILLS": "Habilidades",
+        "EDUCATION": "Educación",
+        "CONTACT_ME": "Contáctame"
+    },
+
+    "PROJECTS": {
+        "TITLE": "Proyectos",
+        "PROJECTS_LIST": [
+        {
+                "TITLE": "Contapp",
+                "DESCRIPTION": "Aplicación educativa para estudiantes de contaduría, simulando un entorno contable real.",
+                "ROLE": "Frontend"
+            },
+           {
+                "TITLE": "ORII",
+                "DESCRIPTION": "Aplicación universitaria para la Oficina de relaciones Interinstitucionales e Interculturales (ORII) de la Universidad de Cauca.",
+                "ROLE": "Backend"
+            },
+         {
+                "TITLE": "Portfolio",
+                "DESCRIPTION": "Proyecto personal para mostrar mis proyectos y experiencias en el mundo del desarrollo web.",
+                "ROLE": "Frontend"
+            },
+       {
+                "TITLE": "Mentha",
+                "DESCRIPTION": "Aplicación web para gestionar la productividad y organizar las actividades diarias de los usuarios. En construcción....", 
+                "ROLE": "Fullstack"
+            },
+        {
+                "TITLE": "AFormats",
+                "DESCRIPTION": "Proyecto universitario que permite gestionar las solicitudes de formatos A para trabajos de grado en la Universidad de Cauca.",
+                "ROLE": "Backend"
+            },{
+                "TITLE": "Banco de proyectos",
+                "DESCRIPTION": "Aplicación web para gestionar los proyectos financieros del Plan de Desarrollo de la Universidad de Cauca.",
+                "ROLE": "Analista"
+            }
+        ],
+        "BUTTONS": {
+            "CODE": "Código",
+            "DEMO": "Ver demo",
+            "NO_AVAILABLE": "No disponible"
+        }
+    },
+    "SKILLS": {
+        "TITLE": "Habilidades"
+    },
+    "EDUCATION": {
+        "TITLE": "Educación",
+        "LST_EDUCATION": [
+            {
+                "TITLE": "Ingeniería de Sistemas",
+                "PLACE": "Universidad de Cauca",
+                "YEAR": "Agosto 2020 - Actualidad"
+            },
+            {
+                "TITLE": "Aplicación del Marco de Trabajo Scrum",
+                "PLACE": "SENA - Colombia",
+                "YEAR": "Agosto 2024 - Octubre 2024"
+            },
+            {
+                "TITLE": "CCNAv7",
+                "PLACE": "CISCO NETWORKING ACADEMY",
+                "YEAR": "Febrero 2024 - Junio 2024"
+            }
+        ]
+    },
+    "CONTACT_ME": {
+        "TITLE": "Contáctame",
+        "FORM": {
+            "NAME": "Nombre",
+            "SUBTITLE": "Envíame una señal desde cualquier rincón del universo",
+            "EMAIL": "Correo",
+            "MESSAGE": "Mensaje",
+            "SEND": "Enviar mensaje",
+            "SEND_SUCCESS": "¡Gracias por contactarnos! Le escribiremos en breve."
+        }
+    },
+    "FOOTER": {
+        "YEAR": "© {{ year }} Santiago Cruz. Todos los derechos reservados 🚀",
+        "SOCIALS": {
+            "GITHUB": "GitHub",
+            "LINKEDIN": "LinkedIn"
+        }
+    }
+}

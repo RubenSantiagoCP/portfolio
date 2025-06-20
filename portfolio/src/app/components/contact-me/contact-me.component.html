@@ -1,31 +1,31 @@
 <div class="container-main-contact">
     <div class="contact-form-container">
-        <h2 class="form-title title-font">Conectemos</h2>
-        <p class="form-subtitle base-font">Envíame una señal desde cualquier rincón del universo</p>
+        <h2 class="form-title title-font">{{ 'CONTACT_ME.TITLE' | translate }}</h2>
+        <p class="form-subtitle base-font">{{ 'CONTACT_ME.FORM.SUBTITLE' | translate }}</p>
 
         <form [formGroup]="contactForm" (ngSubmit)="sendEmail()" class="base-font">
             <div class="form-group">
-                <input class="base-font" type="text" placeholder="Nombre" formControlName="name" />
+                <input class="base-font" type="text" placeholder="{{ 'CONTACT_ME.FORM.NAME' | translate }}" formControlName="name" />
                 <small *ngIf="contactForm.get('nombre')?.invalid && contactForm.get('nombre')?.touched">Nombre
                     requerido</small>
             </div>
 
             <div class="form-group">
-                <input class="base-font" type="email" placeholder="Email" formControlName="email" />
+                <input class="base-font" type="email" placeholder="{{ 'CONTACT_ME.FORM.EMAIL' | translate }}" formControlName="email" />
                 <small *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
                     Email válido requerido
                 </small>
             </div>
 
             <div class="form-group">
-                <textarea class="base-font" placeholder="Mensaje" formControlName="message"></textarea>
+                <textarea class="base-font" placeholder="{{ 'CONTACT_ME.FORM.MESSAGE' | translate }}" formControlName="message"></textarea>
                 <small *ngIf="contactForm.get('mensaje')?.invalid && contactForm.get('mensaje')?.touched">
                     El mensaje no puede estar vacío
                 </small>
             </div>
 
             <button type="submit" [disabled]="!contactForm.valid" class="send-button">
-                Enviar mensaje
+                {{ 'CONTACT_ME.FORM.SEND' | translate }}
             </button>
         </form>
 

@@ -2,7 +2,7 @@
     <div class="container-planet">
         <img src="../../../assets/images/planet-skilss.webp" alt="Planeta" />
     </div>
-    <h2 class="title-section ">Habilidades</h2>
+    <h2 class="title-section ">{{ 'SKILLS.TITLE' | translate }}</h2>
     <ul class="skills-list">
         <li class="skill-item aos-init aos-animate" *ngFor="let skill of lst_skills" data-aos="fade-up" data-aos-delay="300">
             <img [src]="skill.icon" alt="Java" class="skill-icon ">

@@ -1,0 +1,269 @@
+{
+  "ABOUT_ME": {
+    "TITLE": "Hi! I'm Santiago...",
+    "ROLE": "Full Stack Developer",
+    "DESCRIPTION1": "Passionate about building complete web applications, from the engine that powers it all (backend) to the control cabin with an intuitive and attractive interface (frontend).",
+    "DESCRIPTION2": "My focus is on developing technological solutions that not only work well, but also inspire and connect with users.",
+    "SOCIALS": {
+      "GITHUB": "GitHub",
+      "LINKEDIN": "LinkedIn",
+      "CONTACT": "Contact",
+      "CV": "View CV"
+    }
+  },
+  "NAVBAR": {
+    "ABOUT_ME": "About Me",
+    "PROJECTS": "Projects",
+    "SKILLS": "Skills",
+    "EDUCATION": "Education",
+    "CONTACT_ME": "Contact Me"
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "PROJECTS_LIST": [
+      {
+        "TITLE": "Contapp",
+        "DESCRIPTION": "Educational app for accounting students, simulating a real accounting environment.",
+        "IMAGE": "../../../assets/images/CONTAPP.webp",
+        "LINK_DEMO": "http://contables.unicauca.edu.co/#/",
+        "LINK_CODE": "https://github.com/RubenSantiagoCP/contapp",
+        "ROLE": "Frontend",
+        "TECH": [
+          "../../../assets/icons/angular.svg",
+          "../../../assets/icons/tailwindcss.svg",
+          "../../../assets/icons/git.svg",
+          "../../../assets/icons/typescript.svg",
+          "../../../assets/icons/css3-1.svg",
+          "../../../assets/icons/html5.svg"
+        ]
+      },
+      {
+        "TITLE": "ORII",
+        "DESCRIPTION": "University app for the Office of Interinstitutional and Intercultural Relations (ORII) at Universidad del Cauca.",
+        "IMAGE": "../../../assets/images/ori.webp",
+        "LINK_CODE": "https://github.com/RubenSantiagoCP/App-A-Formats---Unicauca",
+        "ROLE": "Backend",
+        "TECH": [
+          "../../../assets/icons/java.png",
+          "../../../assets/icons/springboot.svg",
+          "../../../assets/icons/springsecurity.svg",
+          "../../../assets/icons/mysql.svg",
+          "../../../assets/icons/git.svg"
+        ]
+      },
+      {
+        "TITLE": "Portfolio",
+        "DESCRIPTION": "Personal project to showcase my web development projects and experience.",
+        "IMAGE": "../../../assets/images/portfolio.webp",
+        "LINK_DEMO": "https://tu-proyecto.com",
+        "LINK_CODE": "https://github.com/RubenSantiagoCP/portfolio",
+        "ROLE": "Frontend",
+        "TECH": [
+          "../../../assets/icons/angular.svg",
+          "../../../assets/icons/tailwindcss.svg",
+          "../../../assets/icons/git.svg",
+          "../../../assets/icons/typescript.svg",
+          "../../../assets/icons/css3-1.svg",
+          "../../../assets/icons/html5.svg"
+        ]
+      },
+      {
+        "TITLE": "Mentha",
+        "DESCRIPTION": "Web app to manage productivity and organize users' daily tasks. In progress....",
+        "IMAGE": "../../../assets/images/Mentha.webp",
+        "LINK_CODE": "https://github.com/RubenSantiagoCP/Mentha",
+        "ROLE": "Fullstack",
+        "TECH": [
+          "../../../assets/icons/angular.svg",
+          "../../../assets/icons/tailwindcss.svg",
+          "../../../assets/icons/typescript.svg",
+          "../../../assets/icons/css3-1.svg",
+          "../../../assets/icons/html5.svg",
+          "../../../assets/icons/java.png",
+          "../../../assets/icons/springboot.svg",
+          "../../../assets/icons/springsecurity.svg",
+          "../../../assets/icons/postgresql.svg"
+        ]
+      },
+      {
+        "TITLE": "AFormats",
+        "DESCRIPTION": "University project for managing 'Formato A' requests for graduation projects at Universidad del Cauca.",
+        "IMAGE": "../../../assets/images/aformats.webp",
+        "LINK_CODE": "https://github.com/RubenSantiagoCP/App-A-Formats---Unicauca",
+        "ROLE": "Backend",
+        "TECH": [
+          "../../../assets/icons/java.png",
+          "../../../assets/icons/springboot.svg",
+          "../../../assets/icons/mysql.svg",
+          "../../../assets/icons/git.svg"
+        ]
+      },
+      {
+        "TITLE": "Project Bank",
+        "DESCRIPTION": "Web app to manage financial projects of the Development Plan at Universidad del Cauca.",
+        "IMAGE": "../../../assets/images/bppuc.webp",
+        "LINK_CODE": "https://github.com/RubenSantiagoCP/Banco-de-Proyectos---Unicauca",
+        "ROLE": "Analyst",
+        "TECH": [
+          "../../../assets/icons/figma.svg"
+        ]
+      }
+    ],
+    "BUTTONS": {
+      "CODE": "Code",
+      "DEMO": "View demo",
+      "NO_AVAILABLE": "Not available"
+    }
+  },
+  "SKILLS": {
+    "TITLE": "Skills",
+    "LIST": [
+      {
+        "NAME": "Java",
+        "ICON": "../../../assets/icons/java.png",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "Spring Boot",
+        "ICON": "../../../assets/icons/springboot.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "Angular",
+        "ICON": "../../../assets/icons/angular.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "SQL",
+        "ICON": "../../../assets/icons/database.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "HTML5",
+        "ICON": "../../../assets/icons/html5.svg",
+        "LEVEL": "Advanced"
+      },
+      {
+        "NAME": "JavaScript",
+        "ICON": "../../../assets/icons/javascript.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "CSS3",
+        "ICON": "../../../assets/icons/css3-1.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "TypeScript",
+        "ICON": "../../../assets/icons/typescript.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "Python",
+        "ICON": "../../../assets/icons/python.svg",
+        "LEVEL": "Basic"
+      },
+      {
+        "NAME": "SQL",
+        "ICON": "../../../assets/icons/database.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "Spring Security",
+        "ICON": "../../../assets/icons/springsecurity.svg",
+        "LEVEL": "Basic"
+      },
+      {
+        "NAME": "Tailwind CSS",
+        "ICON": "../../../assets/icons/tailwindcss.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "Git",
+        "ICON": "../../../assets/icons/git.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "GitHub",
+        "ICON": "../../../assets/icons/github.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "Figma",
+        "ICON": "../../../assets/icons/figma.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "MySQL",
+        "ICON": "../../../assets/icons/mysql.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "PostgreSQL",
+        "ICON": "../../../assets/icons/postgresql.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "Postman",
+        "ICON": "../../../assets/icons/postman.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "Slack",
+        "ICON": "../../../assets/icons/slack.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "Swagger",
+        "ICON": "../../../assets/icons/swagger.svg",
+        "LEVEL": "Intermediate"
+      },
+      {
+        "NAME": "Trello",
+        "ICON": "../../../assets/icons/trello.svg",
+        "LEVEL": "Intermediate"
+      }
+    ]
+  },
+  "EDUCATION": {
+    "TITLE": "Education",
+    "LST_EDUCATION": [
+      {
+        "TITLE": "Systems Engineering",
+        "PLACE": "Universidad del Cauca",
+        "YEAR": "August 2020 - Present",
+        "ICON": "../../../assets/icons/universidad.svg"
+      },
+      {
+        "TITLE": "Scrum Framework Application",
+        "PLACE": "SENA - Colombia",
+        "YEAR": "August 2024 - October 2024",
+        "ICON": "../../../assets/icons/sena.svg"
+      },
+      {
+        "TITLE": "CCNAv7",
+        "PLACE": "CISCO NETWORKING ACADEMY",
+        "YEAR": "February 2024 - June 2024",
+        "ICON": "../../../assets/icons/cisco.svg"
+      }
+    ]
+  },
+  "CONTACT_ME": {
+    "TITLE": "Contact Me",
+    "FORM": {
+      "NAME": "Name",
+      "SUBTITLE": "Send me a signal from anywhere in the universe",
+      "EMAIL": "Email",
+      "MESSAGE": "Message",
+      "SEND": "Send message",
+      "SEND_SUCCESS": "Thanks for reaching out! I’ll get back to you soon."
+    }
+  },
+  "FOOTER": {
+    "YEAR": "Santiago Cruz. All rights reserved 🚀",
+    "SOCIALS": {
+      "GITHUB": "GitHub",
+      "LINKEDIN": "LinkedIn"
+    }
+  }
+}

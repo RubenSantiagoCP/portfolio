@@ -8,19 +8,20 @@ import {
 } from '@angular/core';
 import { Project } from './Project';
 import { CommonModule } from '@angular/common';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
   projects: Project[] = [
     {
-      title: 'Contapp',
+      title: 'PROJECTS.PROJECTS_LIST.0.TITLE',
       description:
-        'Aplicación educativa para estudiantes de contaduría, simulando un entorno contable real.',
+        'PROJECTS.PROJECTS_LIST.0.DESCRIPTION',
       image: '../../../assets/images/CONTAPP.webp',
       url_demo: 'http://contables.unicauca.edu.co/#/',
       tech: [
@@ -31,12 +32,12 @@ export class ProjectsComponent {
         '../../../assets/icons/css3-1.svg',
         '../../../assets/icons/html5.svg',
       ],
-      role: 'Frontend',
+      role: 'PROJECTS.PROJECTS_LIST.0.ROLE',
     },
     {
-      title: 'ORII',
+      title: 'PROJECTS.PROJECTS_LIST.1.TITLE',
       description:
-        'Aplicación universitaria para la Oficina de relaciones Interinstitucionales e Interculturales (ORII) de la Universidad de Cauca.',
+        'PROJECTS.PROJECTS_LIST.1.DESCRIPTION',
       image: '../../../assets/images/ori.webp',
       tech: [
         '../../../assets/icons/java.png',
@@ -45,12 +46,12 @@ export class ProjectsComponent {
         '../../../assets/icons/mysql.svg',
         '../../../assets/icons/git.svg',
       ],
-      role: 'Backend',
+      role: 'PROJECTS.PROJECTS_LIST.1.ROLE',
     },
     {
-      title: 'Portfolio',
+      title: 'PROJECTS.PROJECTS_LIST.2.TITLE',
       description:
-        'Proyecto personal para mostrar mis proyectos y experiencias en el mundo del desarrollo web.',
+        'PROJECTS.PROJECTS_LIST.2.DESCRIPTION',
       image: '../../../assets/images/portfolio.webp',
       url_demo: 'https://tu-proyecto.com',
       url_code: 'https://github.com/RubenSantiagoCP/portfolio',
@@ -62,12 +63,12 @@ export class ProjectsComponent {
         '../../../assets/icons/css3-1.svg',
         '../../../assets/icons/html5.svg',
       ],
-      role: 'Frontend',
+      role: 'PROJECTS.PROJECTS_LIST.2.ROLE',
     },
     {
-      title: 'Mentha',
+      title: 'PROJECTS.PROJECTS_LIST.3.TITLE',
       description:
-        'Aplicación web para gestionar la productividad y organizar las actividades diarias de los usuarios. En construcción....',
+        'PROJECTS.PROJECTS_LIST.3.DESCRIPTION',
       image: '../../../assets/images/Mentha.webp',
       tech: [
         '../../../assets/icons/angular.svg',
@@ -80,13 +81,13 @@ export class ProjectsComponent {
         '../../../assets/icons/springsecurity.svg',
         '../../../assets/icons/postgresql.svg',
       ],
-      role: 'Fullstack',
+      role: 'PROJECTS.PROJECTS_LIST.3.ROLE',
       url_code: 'https://github.com/RubenSantiagoCP/Mentha'
     },
     {
-      title: 'AFormats',
+      title: 'PROJECTS.PROJECTS_LIST.4.TITLE',
       description:
-        'Proyecto universitario que permite gestionar las solicitudes de formatos A para trabajos de grado en la Universidad de Cauca.',
+        'PROJECTS.PROJECTS_LIST.4.DESCRIPTION',
       image: '../../../assets/images/aformats.webp',
       url_code: 'https://github.com/RubenSantiagoCP/App-A-Formats---Unicauca',
       tech: [
@@ -95,15 +96,21 @@ export class ProjectsComponent {
         '../../../assets/icons/mysql.svg',
         '../../../assets/icons/git.svg',
       ],
-      role: 'Backend',
+      role: 'PROJECTS.PROJECTS_LIST.4.ROLE',
     },
     {
-      title: 'Banco de proyectos',
+      title: 'PROJECTS.PROJECTS_LIST.5.TITLE',
       description:
-        'Aplicación web para gestionar los proyectos financieros del Plan de Desarrollode la Universidad de Cauca.',
+        'PROJECTS.PROJECTS_LIST.5.DESCRIPTION',
       image: '../../../assets/images/bppuc.webp',
       tech: ['../../../assets/icons/figma.svg'],
-      role: 'Analista',
+      role: 'PROJECTS.PROJECTS_LIST.5.ROLE',
     },
   ];
+
+     constructor(private translate: TranslateService) {
+        const lang = localStorage.getItem('lang') || 'es';
+        this.translate.setDefaultLang('es');
+        this.translate.use(lang);
+      }
 }

@@ -1,24 +1,28 @@
 <nav class="sidebar base-font" [class.scrolled]="isScrolled">
   <ul class="sidebar-list">
     <li class="sidebar-item">
-      <a href="#about-me" class="sidebar-link">Sobre mí</a>
+      <a href="#about-me" class="sidebar-link"> {{ 'NAVBAR.ABOUT_ME' | translate }}</a>
     </li>
 
     <li class="sidebar-item">
 
-      <a href="#projects" class="sidebar-link">Proyectos</a>
+      <a href="#projects" class="sidebar-link"> {{ 'NAVBAR.PROJECTS' | translate }}</a>
     </li>
 
     <li class="sidebar-item">
-      <a href="#skills" class="sidebar-link">Habilidades</a>
+      <a href="#skills" class="sidebar-link"> {{ 'NAVBAR.SKILLS' | translate }}</a>
     </li>
 
     <li class="sidebar-item">
-      <a href="#education" class="sidebar-link">Educación</a>
+      <a href="#education" class="sidebar-link"> {{ 'NAVBAR.EDUCATION' | translate }}</a>
     </li>
 
     <li class="sidebar-item">
-      <a href="#contact-me" class="sidebar-link">Contáctame</a>
+      <a href="#contact-me" class="sidebar-link"> {{ 'NAVBAR.CONTACT_ME' | translate }}</a>
+    </li>
+    <li class="sidebar-item language-container">
+      <button (click)="changeLanguage('es')" class="lang-btn">ES</button>
+      <button (click)="changeLanguage('en')" class="lang-btn">EN</button>
     </li>
   </ul>
 </nav>

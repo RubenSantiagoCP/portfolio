@@ -4,17 +4,15 @@
         <div class="profile-img">
             <img src="assets/images/photo-main.webp" alt="Mi foto de perfil">
         </div>
-        <h1 class="name title-font typewriter"><span class="typewriter-text">Hola! soy Santiago...</span></h1>
-        <h2 class="subtitile-name subtitle-font   glow-border">Desarrollador Full Stack</h2>
+        <h1 class="name title-font typewriter"><span class="typewriter-text">{{ 'ABOUT_ME.TITLE' | translate }}</span></h1>
+        <h2 class="subtitile-name subtitle-font   glow-border">{{ 'ABOUT_ME.ROLE' | translate }}</h2>
 
         <div class="description-about-me base-font">
             <p>
-                🚀 Apasionado por crear aplicaciones web completas, desde el motor que impulsa todo (backend) hasta la
-                cabina de control con una interfaz intuitiva y atractiva (frontend).
+                🚀{{'ABOUT_ME.DESCRIPTION1' | translate}}
             </p>
             <p>
-                Mi enfoque está en desarrollar soluciones tecnológicas que no solo funcionen bien, sino que también
-                inspiren y conecten con los usuarios.
+                {{'ABOUT_ME.DESCRIPTION2' | translate}}
             </p>
         </div>
 
@@ -28,12 +26,12 @@
                 <i class="fab fa-linkedin"></i>
             </a>
             <a href="#contact-me" title="Send me an email" aria-label="Correo">
-                <span>Contactar</span>
+                <span>{{'ABOUT_ME.SOCIALS.CONTACT' | translate}}</span>
 
                 <i class="fas fa-envelope"></i>
             </a>
             <a href="../../../assets/resources/CV - Ruben Cruz English.pdf" aria-label="Hoja de vida" target="_blank">
-                <span>Ver CV</span>
+                <span>{{'ABOUT_ME.SOCIALS.CV' | translate}}</span>
                 <i class="fas fa-book"></i>
             </a>
         </div>

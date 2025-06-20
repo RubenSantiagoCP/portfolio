@@ -1,14 +1,13 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { AboutMeComponent } from '../about-me/about-me.component';
 import { ContactMeComponent } from '../contact-me/contact-me.component';
-import { FooterComponent } from '../footer/footer.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { EducationComponent } from '../education/education.component';
 
 @Component({
   selector: 'app-main',
-  imports: [AboutMeComponent, ContactMeComponent, ProjectsComponent, SkillsComponent, EducationComponent, FooterComponent],
+  imports: [AboutMeComponent, ContactMeComponent, ProjectsComponent, SkillsComponent, EducationComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })

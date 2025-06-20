@@ -9,11 +9,8 @@
   background-color: transparent;
   transition: all 0.4s ease-in-out;
 
-  @media(max-width: 768px) {
-    width: 80%;
-  }
-  @media(max-width: 375px) {
-    max-width: 375px;
+  @media(max-width: 550px) {
+    width: 93%;
   }
 }
 
@@ -25,6 +22,11 @@
       );
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   border: 1px solid #1E9BD1;
+
+  @media(max-width: 550px) {
+    width: 93%;
+    padding: 5px;
+  }
 }
 
 .sidebar-list {
@@ -100,5 +102,25 @@
   width: 100%;
 }
 
+.lang-btn {
+  background-color: transparent;
+  border: 1px solid #1E9BD1;
+  color: #ffffff;
+  padding: 7px 8px;
+  font-size: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-right: 0.4rem;
 
+  &:hover {
+    transform: scale(1.05);
+  }
 
+  @media(max-width: 768px) {
+    font-size: 0.5rem;
+    padding: 4px 4px;
+  }
+}

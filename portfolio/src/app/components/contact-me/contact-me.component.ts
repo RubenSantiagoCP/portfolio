@@ -8,22 +8,28 @@ import {
 import { CommonModule } from '@angular/common';
 import emailjs, { init } from 'emailjs-com';
 import Swal from 'sweetalert2';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-me',
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, TranslateModule],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss',
 })
 export class ContactMeComponent {
   contactForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+
+  constructor(private fb: FormBuilder, private translate: TranslateService) {
     this.contactForm = this.fb.group({
       name: [null, Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
     });
+
+     const lang = localStorage.getItem('lang') || 'es';
+      this.translate.setDefaultLang('es');
+      this.translate.use(lang);
   }
 
   sendEmail() {
@@ -66,4 +72,6 @@ export class ContactMeComponent {
         });
       });
   }
+
+  
 }

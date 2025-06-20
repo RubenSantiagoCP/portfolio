@@ -18,6 +18,13 @@
   }
 }
 
+.about-me{
+  margin-bottom: 6.5rem;
+  @media(max-width: 550px) {
+    margin-bottom: 0rem;
+  }
+}
+
 .fade-section.faded {
   opacity: 0;
   transform: scale(0.95);

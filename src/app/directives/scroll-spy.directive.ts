@@ -13,7 +13,7 @@ export class ScrollSpyDirective {
 
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
-      if (rect.top <= 150 && rect.bottom >= 150) {
+      if (rect.top <= 100 && rect.bottom >= 100) {
         currentSectionId = section.id;
       }
     });

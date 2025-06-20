@@ -1,40 +1,22 @@
 <div class="education-card">
-  <h2 class="section-title">🎓 Educación</h2>
+  <div class="container-title">
+    <div class="container-planet">
+      <img src="../../../assets/images/education-planet.webp" alt="Planeta" />
+    </div>
+    <h2 class="title-section">Educación</h2>
+  </div>
 
   <div class="education-list">
 
-    <div class="education-item">
+    <div *ngFor="let education of lst_education" class="education-item">
       <div class="education-icon">
-        <img src="assets/icons/university.svg" alt="Universidad" />
+        <img src="{{ education.icon }}" alt="Universidad" />
       </div>
       <div class="education-info">
-        <h3 class="edu-title">Ingeniería de Sistemas</h3>
-        <p class="edu-place">Universidad XYZ</p>
-        <p class="edu-year">2019 - Presente</p>
+        <h3 class="edu-title">{{ education.title }}</h3>
+        <p class="edu-place base-font">{{ education.place }}</p>
+        <p class="edu-year base-font">{{ education.year }}</p>
       </div>
     </div>
-
-    <div class="education-item">
-      <div class="education-icon">
-        <img src="assets/icons/certificate.svg" alt="Certificado" />
-      </div>
-      <div class="education-info">
-        <h3 class="edu-title">Curso Profesional de Spring Boot</h3>
-        <p class="edu-place">Platzi</p>
-        <p class="edu-year">2023</p>
-      </div>
-    </div>
-
-    <div class="education-item">
-      <div class="education-icon">
-        <img src="assets/icons/certificate.svg" alt="Certificado" />
-      </div>
-      <div class="education-info">
-        <h3 class="edu-title">Angular desde cero</h3>
-        <p class="edu-place">Udemy</p>
-        <p class="edu-year">2024</p>
-      </div>
-    </div>
-
   </div>
 </div>

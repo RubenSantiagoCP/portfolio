@@ -1,11 +1,9 @@
 import { Directive, HostListener, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[appScrollSpy]'
+  selector: '[appScrollSpy]',
 })
 export class ScrollSpyDirective {
-  constructor(private el: ElementRef) {}
-
   @HostListener('window:scroll', [])
   onScroll(): void {
     const sections = document.querySelectorAll('section');
@@ -13,16 +11,17 @@ export class ScrollSpyDirective {
 
     let currentSectionId = '';
 
-    sections.forEach(section => {
+    sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
       if (rect.top <= 150 && rect.bottom >= 150) {
         currentSectionId = section.id;
       }
     });
 
-    links.forEach(link => {
+    links.forEach((link) => {
       link.classList.remove('active');
-      if (link.getAttribute('href') === `#${currentSectionId}`) {
+      const href = link.getAttribute('href') || '';
+      if (href === `#${currentSectionId}`) {
         link.classList.add('active');
       }
     });

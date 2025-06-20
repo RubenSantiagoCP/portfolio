@@ -8,7 +8,7 @@ import { EducationComponent } from '../education/education.component';
 
 @Component({
   selector: 'app-main',
-  imports: [AboutMeComponent, ContactMeComponent, ProjectsComponent, SkillsComponent, EducationComponent],
+  imports: [AboutMeComponent, ContactMeComponent, ProjectsComponent, SkillsComponent, EducationComponent, FooterComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })

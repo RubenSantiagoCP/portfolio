@@ -1,8 +1,6 @@
 .skills-card {
   border-radius: 1rem;
   padding: 2rem;
-  max-width: 600px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,56 +10,91 @@
   .skills-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 2.6rem;
+    width: 100%;
+    max-width: 800px;
+    justify-items: center;
+    text-align: center;
+
+    @media(max-width: 700px) {
+      width: 90%;
+   }
   }
 
   .skill-item {
-    background: rgba(10, 15, 40, 0.9);
-    border: 1px solid #0ff5;
-    border-radius: 0.8rem;
-    padding: 1rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
-    transition: transform 0.3s, box-shadow 0.3s;
-
-    &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 0 15px #0ff7;
-    }
+    gap: 0.5rem;
+    transform: translateY(100px);
+    animation: fadeInUp 0.9s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 
     .skill-icon {
-      width: 36px;
-      height: 36px;
-      filter: drop-shadow(0 0 6px #0ff);
+      width: 50px;
+      height: 50px;
+      filter: drop-shadow(0 0 1px #0ff7) drop-shadow(0 0 5px #1E9BD1);
+      animation: scale 3s ease-in-out infinite;
     }
 
     .skill-name {
-      flex: 1;
-      font-size: 1rem;
+      font-size: 0.8rem;
+      font-weight: 10;
+      margin-top: 1rem;
     }
 
     .skill-level {
-      font-size: 0.85rem;
-      padding: 0.2rem 0.6rem;
-      border-radius: 0.5rem;
-      text-transform: uppercase;
+      opacity: 0.9;
+      margin-top: 0.2rem;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
       font-weight: bold;
-      &.level-basic {
-        background: #ff0055;
-        box-shadow: 0 0 6px #ff3366;
-      }
-      &.level-medium {
-        background: #ffaa00;
-        box-shadow: 0 0 6px #ffbb33;
-      }
-      &.level-advanced {
-        background: #00ff99;
-        box-shadow: 0 0 6px #33ffbb;
-      }
+      text-transform: uppercase;
+      border-radius: 1rem;
+      min-width: 80px;
+      text-align: center;
+
+  &.level-basic {
+    background: #D1435B;
+    box-shadow: 0 0 6px #d1435b66;
+  }
+
+  &.level-medium {
+    background: #8C4BD1;
+    box-shadow: 0 0 6px #8c4bd166;
+  }
+
+  &.level-advanced {
+    background: #1E9BD1;
+    box-shadow: 0 0 6px #1e9bd166;
+  }
     }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale{
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
   }
 }

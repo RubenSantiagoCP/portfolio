@@ -49,7 +49,7 @@ export class ThreeBackgroundService {
   const colors = []; // Array para colores individuales
 
   // Crear 10,000 estrellas
-  for (let i = 0; i < 5000; i++) {
+  for (let i = 0; i < 4000; i++) {
     // Posiciones aleatorias en un cubo 3D
     vertices.push(
       (Math.random() - 0.5) * 2000,

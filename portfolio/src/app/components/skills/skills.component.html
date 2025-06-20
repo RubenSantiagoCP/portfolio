@@ -1,28 +1,12 @@
 <div class="skills-card">
     <div class="container-planet">
-        <img src="../../../assets/images/planet-skilss.png" alt="Planeta" />
+        <img src="../../../assets/images/planet-skilss.webp" alt="Planeta" />
     </div>
     <h2 class="title-section ">Habilidades</h2>
     <ul class="skills-list">
-        <li class="skill-item">
-            <img src="assets/icons/java.svg" alt="Java" class="skill-icon">
-            <span class="skill-name">Java</span>
-            <span class="skill-level level-advanced">Avanzado</span>
-        </li>
-        <li class="skill-item">
-            <img src="assets/icons/spring.svg" alt="Spring Boot" class="skill-icon">
-            <span class="skill-name">Spring Boot</span>
-            <span class="skill-level level-medium">Medio</span>
-        </li>
-        <li class="skill-item">
-            <img src="assets/icons/angular.svg" alt="Angular" class="skill-icon">
-            <span class="skill-name">Angular</span>
-            <span class="skill-level level-advanced">Avanzado</span>
-        </li>
-        <li class="skill-item">
-            <img src="assets/icons/sql.svg" alt="SQL" class="skill-icon">
-            <span class="skill-name">SQL</span>
-            <span class="skill-level level-medium">Medio</span>
+        <li class="skill-item aos-init aos-animate" *ngFor="let skill of lst_skills" data-aos="fade-up" data-aos-delay="300">
+            <img [src]="skill.icon" alt="Java" class="skill-icon ">
+            <span class="skill-name base-font">{{ skill.name }}</span>
         </li>
     </ul>
 </div>

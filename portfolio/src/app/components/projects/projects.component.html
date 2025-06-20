@@ -1,109 +1,33 @@
 <div class="container-projects">
     <div class="container-planet">
-        <img src="../../../assets/images/projects-planet.png" alt="Planeta" />
+        <img src="../../../assets/images/projects-planet.webp" alt="Planeta" />
     </div>
     <h2 class="title-section">Proyectos</h2>
     <div class="container-cards">
-        <div class="project-card">
+        <div class="project-card #cardRef" *ngFor="let project of projects">
             <div class="project-image">
-                <img src="../../../assets/images/CONTAPP.png" alt="Imagen del proyecto" />
+                <img [src]="project.image" alt="Imagen del proyecto" />
             </div>
 
             <div class="project-content">
-                <h3 class="project-title">Contapp</h3>
-
-                <p class="project-description">
-                    Aplicación educativa para estudiantes de contaduría, simulando un entorno contable real.
+                <h3 class="project-title">{{ project.title }}</h3>
+                <span class=" role glow-border">{{ project.role }}</span>
+                <p class="project-description base-font">
+                    {{ project.description }}
                 </p>
 
                 <div class="project-tech">
-                     <i class="fab fa-angular"></i>
-                    <i class="fab fa-tailwind"></i>
-                    <i class="fab fa-spring"></i>
-                    <i class="fab fa-java"></i>
+                    <img *ngFor="let tech of project.tech" src="{{ tech }}" alt="Tech">
                 </div>
 
                 <div class="project-links">
-                    <a href="https://github.com/tu-repo" target="_blank" class="btn-glow">Código</a>
-                    <a href="https://tu-proyecto.com" target="_blank" class="btn-glow">Ver demo</a>
+                    <a *ngIf="project.url_code" [href]="project.url_code" target="_blank" class="btn-glow">Código</a>
+                    <a *ngIf="project.url_demo" [href]="project.url_demo" target="_blank" class="btn-glow">Ver demo</a>
+                    <a *ngIf="!project.url_code && !project.url_demo" class="btn-glow">No disponible</a>
                 </div>
             </div>
         </div>
-        <div class="project-card">
-            <div class="project-image">
-                <img src="../../../assets/images/CONTAPP.png" alt="Imagen del proyecto" />
-            </div>
 
-            <div class="project-content">
-                <h3 class="project-title">Contapp</h3>
-
-                <p class="project-description">
-                    Aplicación educativa para estudiantes de contaduría, simulando un entorno contable real.
-                </p>
-
-                <div class="project-tech">
-                     <i class="fab fa-angular"></i>
-                    <i class="fab fa-tailwind"></i>
-                    <i class="fab fa-spring"></i>
-                    <i class="fab fa-java"></i>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/tu-repo" target="_blank" class="btn-glow">Código</a>
-                    <a href="https://tu-proyecto.com" target="_blank" class="btn-glow">Ver demo</a>
-                </div>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-image">
-                <img src="../../../assets/images/CONTAPP.png" alt="Imagen del proyecto" />
-            </div>
-
-            <div class="project-content">
-                <h3 class="project-title">Contapp</h3>
-
-                <p class="project-description">
-                    Aplicación educativa para estudiantes de contaduría, simulando un entorno contable real.
-                </p>
-
-                <div class="project-tech">
-                     <i class="fab fa-angular"></i>
-                    <i class="fab fa-tailwind"></i>
-                    <i class="fab fa-spring"></i>
-                    <i class="fab fa-java"></i>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/tu-repo" target="_blank" class="btn-glow">Código</a>
-                    <a href="https://tu-proyecto.com" target="_blank" class="btn-glow">Ver demo</a>
-                </div>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-image">
-                <img src="../../../assets/images/CONTAPP.png" alt="Imagen del proyecto" />
-            </div>
-
-            <div class="project-content">
-                <h3 class="project-title">Contapp</h3>
-
-                <p class="project-description">
-                    Aplicación educativa para estudiantes de contaduría, simulando un entorno contable real.
-                </p>
-
-                <div class="project-tech">
-                    <i class="fab fa-angular"></i>
-                    <i class="fab fa-tailwind"></i>
-                    <i class="fab fa-spring"></i>
-                    <i class="fab fa-java"></i>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/tu-repo" target="_blank" class="btn-glow">Código</a>
-                    <a href="https://tu-proyecto.com" target="_blank" class="btn-glow">Ver demo</a>
-                </div>
-            </div>
-        </div>
     </div>
 
 

@@ -18,6 +18,26 @@
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 0 20px #0ff4;
+  animation: scale 5s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(0deg, transparent , #1E9BD1, transparent);  
+    background-size: 400% 400%;
+    animation: borderSnake 3s linear infinite;
+    z-index: -1;
+    mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+  }
 
   .form-title {
     font-size: 1.8rem;
@@ -99,7 +119,7 @@
 
 .container-satelite {
   position: absolute;
-  width: 100%;
+  width: 70%;
   height: 100%;
   overflow: hidden;
   z-index: -1;
@@ -114,6 +134,7 @@
   opacity: 0.9;
 }
 
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -122,3 +143,22 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes borderSnake {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 400%;
+  }
+}
+
+@keyframes scale{
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

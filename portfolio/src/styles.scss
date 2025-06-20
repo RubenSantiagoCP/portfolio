@@ -65,13 +65,12 @@ app-root {
   letter-spacing: 2px;
   text-shadow: 0 0 1px $color-primary, 0 0 0px $color-primary;
   margin-bottom: 2rem;
-  animation: glowFade 2s ease-in-out infinite alternate;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid rgba(0, 255, 255, 0.4);
 }
 
 .container-planet{
-    max-width: 170px;
+    max-width: 120px;
     display: flex;
     justify-items: center;
     animation: float 3s ease-in-out infinite;
@@ -105,5 +104,30 @@ app-root {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.glow-border {
+  color: transparent;
+  background: linear-gradient(
+  90deg,
+  #1E9BD1,
+  #29B3F0,
+  #8029B0,
+  #FF00FF,
+  #1E9BD1
+);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: borderGlow 20s linear infinite;
+}
+
+@keyframes borderGlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 400% 0%;
   }
 }

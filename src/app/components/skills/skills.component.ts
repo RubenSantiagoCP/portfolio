@@ -78,7 +78,7 @@ export class SkillsComponent {
       icon: '../../../assets/icons/git.svg',
     },
     {
-      name: 'GutHub',
+      name: 'GitHub',
       level: 'Medio',
       icon: '../../../assets/icons/github.svg',
     },

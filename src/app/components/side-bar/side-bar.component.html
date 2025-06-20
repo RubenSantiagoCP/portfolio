@@ -1,24 +1,29 @@
 <nav class="sidebar base-font" [class.scrolled]="isScrolled">
   <ul class="sidebar-list">
     <li class="sidebar-item">
-      <a href="#about-me" class="sidebar-link"> {{ 'NAVBAR.ABOUT_ME' | translate }}</a>
+      <a href="#about-me" class="sidebar-link sidebar-link-text"> {{ 'NAVBAR.ABOUT_ME' | translate }}</a>
+      <a href="#about-me" class="sidebar-link"> <i class="fa-solid fa-rocket icon-sidebar"></i></a>
+
     </li>
 
     <li class="sidebar-item">
-
-      <a href="#projects" class="sidebar-link"> {{ 'NAVBAR.PROJECTS' | translate }}</a>
+      <a href="#projects" class="sidebar-link sidebar-link-text"> {{ 'NAVBAR.PROJECTS' | translate }}</a>
+      <a href="#projects" class="sidebar-link"> <i class="fa-solid fa-desktop icon-sidebar"></i></a>
     </li>
 
     <li class="sidebar-item">
-      <a href="#skills" class="sidebar-link"> {{ 'NAVBAR.SKILLS' | translate }}</a>
+      <a href="#skills" class="sidebar-link sidebar-link-text"> {{ 'NAVBAR.SKILLS' | translate }}</a>
+      <a href="#skills" class="sidebar-link"> <i class="fa-solid fa-brain icon-sidebar"></i></a>
     </li>
 
     <li class="sidebar-item">
-      <a href="#education" class="sidebar-link"> {{ 'NAVBAR.EDUCATION' | translate }}</a>
+      <a href="#education" class="sidebar-link sidebar-link-text"> {{ 'NAVBAR.EDUCATION' | translate }}</a>
+      <a href="#education" class="sidebar-link"> <i class="fa-solid fa-graduation-cap icon-sidebar"></i></a>
     </li>
 
     <li class="sidebar-item">
-      <a href="#contact-me" class="sidebar-link"> {{ 'NAVBAR.CONTACT_ME' | translate }}</a>
+      <a href="#contact-me" class="sidebar-link sidebar-link-text"> {{ 'NAVBAR.CONTACT_ME' | translate }}</a>
+      <a href="#contact-me" class="sidebar-link"> <i class="fa-solid fa-envelope icon-sidebar"></i></a>
     </li>
     <li class="sidebar-item language-container">
       <button (click)="changeLanguage('es')" class="lang-btn">ES</button>

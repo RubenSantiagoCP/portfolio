@@ -1,6 +1,6 @@
 {
   "ABOUT_ME": {
-    "TITLE": "Hi! I'm Santiago...",
+    "TITLE": "Hi! I'm Santiago Cruz...",
     "ROLE": "Full Stack Developer",
     "DESCRIPTION1": "Passionate about building complete web applications, from the engine that powers it all (backend) to the control cabin with an intuitive and attractive interface (frontend).",
     "DESCRIPTION2": "My focus is on developing technological solutions that not only work well, but also inspire and connect with users.",
@@ -260,7 +260,7 @@
     }
   },
   "FOOTER": {
-    "YEAR": "Santiago Cruz. All rights reserved 🚀",
+    "YEAR": "Ruben Santiago Cruz Peña. All rights reserved 🚀",
     "SOCIALS": {
       "GITHUB": "GitHub",
       "LINKEDIN": "LinkedIn"

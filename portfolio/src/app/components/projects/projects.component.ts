@@ -67,7 +67,7 @@ export class ProjectsComponent {
     {
       title: 'Mentha',
       description:
-        'Aplicación web para gestionar la productividad y organizar las actividades diarias de los usuarios ',
+        'Aplicación web para gestionar la productividad y organizar las actividades diarias de los usuarios. En construcción....',
       image: '../../../assets/images/Mentha.webp',
       tech: [
         '../../../assets/icons/angular.svg',
@@ -81,12 +81,13 @@ export class ProjectsComponent {
         '../../../assets/icons/postgresql.svg',
       ],
       role: 'Fullstack',
+      url_code: 'https://github.com/RubenSantiagoCP/Mentha'
     },
     {
       title: 'AFormats',
       description:
         'Proyecto universitario que permite gestionar las solicitudes de formatos A para trabajos de grado en la Universidad de Cauca.',
-      image: '../../../assets/images/Mentha.webp',
+      image: '../../../assets/images/aformats.webp',
       url_code: 'https://github.com/RubenSantiagoCP/App-A-Formats---Unicauca',
       tech: [
         '../../../assets/icons/java.png',

@@ -78,6 +78,11 @@
         font-style: italic;
       }
     }
+
+    @media(max-width: 550px) {
+      width: 100%;
+      max-width: 80vw;
+    }
   }
 }
 

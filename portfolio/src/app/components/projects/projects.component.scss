@@ -4,10 +4,10 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 4rem;
-    @media(max-width: 700px) {
-      margin-top: 10rem;
+    @media(max-width: 550px) {
+      margin-top: 5rem;
     }
-}
+  }
 
 .container-cards{
   margin-top: 2rem;
@@ -30,7 +30,7 @@
   border: 1px solid #1E9BD1;
   border-radius: 1.5rem;
   box-shadow: 0 0 5px #1E9BD1;
-  padding: 2.2rem 2rem;
+  padding: 2.2rem 1.5rem;
   display: flex;
   margin: 1rem;
   flex-direction: column;
@@ -45,9 +45,9 @@
   color: #fff;
   margin-bottom: 3rem;
 
-  @media(max-width: 500px) {
-    width: 90%;
-    margin: 1rem 2rem;
+  @media(max-width: 550px) {
+    width: 100%;
+    max-width: 80vw;
   }
 }
 
@@ -58,6 +58,11 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+    @media(max-width: 550px) {
+      width: 100%;
+      max-width: 60vw;
+    }
 }
 
 .project-image img {
@@ -88,13 +93,16 @@
   font-size: 1rem;
   color: #ccc;
   margin-bottom: 1rem;
+  @media(max-width: 550px) {
+    font-size: 0.8rem;
+  }
 }
 
 .project-tech {
   display: flex;
   justify-content: center;
   gap: 0.8rem;
-  margin-top: auto;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 
   img {
@@ -106,6 +114,11 @@
     &:hover {
       transform: scale(1.1);
     }
+
+      @media(max-width: 550px) {
+        width: 20px;
+        height: 20px;
+      }
   }
 }
 

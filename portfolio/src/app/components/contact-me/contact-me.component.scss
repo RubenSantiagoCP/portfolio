@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  
 }
 
 .contact-form-container {
@@ -114,6 +115,11 @@
       color: #888;
       cursor: not-allowed;
     }
+  }
+
+  @media(max-width: 550px) {
+    max-width: 80vw;
+    margin: 0rem 2rem;
   }
 }
 

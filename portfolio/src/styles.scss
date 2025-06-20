@@ -5,7 +5,8 @@
 
    $color-primary: #1E9BD1;
    $color-secondary: #00e6ff;
- 
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -67,6 +68,9 @@ app-root {
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid rgba(0, 255, 255, 0.4);
+  @media(max-width: 550px) {
+    font-size: 1rem;
+  }
 }
 
 .container-planet{
@@ -75,6 +79,9 @@ app-root {
     justify-items: center;
     animation: float 3s ease-in-out infinite;
     margin-bottom: 1rem;
+    @media(max-width: 550px) {
+      max-width: 90px;
+    }
 }
 
 .container-planet img{

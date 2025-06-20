@@ -37,6 +37,11 @@ export class SkillsComponent {
       icon: '../../../assets/icons/html5.svg',
     },
     {
+      name: 'JavaScript',
+      level: 'Medio',
+      icon: '../../../assets/icons/javascript.svg',
+    },
+    {
       name: 'CSS3',
       level: 'Medio',
       icon: '../../../assets/icons/css3-1.svg',

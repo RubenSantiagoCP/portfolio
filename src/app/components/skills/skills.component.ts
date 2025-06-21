@@ -58,11 +58,6 @@ export class SkillsComponent {
       icon: '../../../assets/icons/python.svg',
     },
     {
-      name: 'SQL',
-      level: 'Medio',
-      icon: '../../../assets/icons/database.svg',
-    },
-    {
       name: 'Spring Security',
       level: 'Básico',
       icon: '../../../assets/icons/springsecurity.svg',

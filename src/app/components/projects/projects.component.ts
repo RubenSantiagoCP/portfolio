@@ -46,6 +46,7 @@ export class ProjectsComponent {
         '../../../assets/icons/mysql.svg',
         '../../../assets/icons/git.svg',
       ],
+      url_demo: "https://orii.vercel.app/",
       role: 'PROJECTS.PROJECTS_LIST.1.ROLE',
     },
     {
